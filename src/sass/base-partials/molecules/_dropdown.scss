@@ -1,0 +1,43 @@
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    background-color:transparent;
+    border:none;
+    @media only screen and (min-width: 991px){
+        margin: 0px auto;
+        width: 100%;
+        text-align: center;
+}
+}
+.dropdown-item{
+    border-bottom:1px solid grey;
+    color:#ffffff;
+    font-size: 13px;
+    @media only screen and (min-width: 991px){
+        display: inline;
+        border:none;
+        margin:0px auto;
+        padding: 4px;
+
+    }
+
+}
+.dropdown{
+    position: inherit;
+}
+@media only screen and (min-width: 991px){
+.dropdown-toggle::after{
+display: none;
+}
+.dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+    display: inline;
+}
+.dropdown-menu{
+    margin-top: 0;
+}
+.dropdown-toggle{
+    margin-bottom: 2px;
+}
+.navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+    margin-bottom: 0;
+}
+
+}

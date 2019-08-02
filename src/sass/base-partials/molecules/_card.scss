@@ -1,0 +1,25 @@
+
+.card{
+    border-radius:0px;
+    border:1px solid $primary;
+    position: relative;
+    &:hover{
+        border:1px solid $primary-yellow;
+        .static {
+            opacity:0;
+          }
+
+    }
+    
+}
+.card-body-about-pp{
+    margin:0px;
+}
+
+.about-pp {
+    .card{
+    text-align: left;
+    border: none;
+    }
+    
+}

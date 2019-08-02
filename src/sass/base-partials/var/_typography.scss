@@ -1,0 +1,25 @@
+
+
+
+$font-size-base:0rem;
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 2.25;
+$h5-font-size: $font-size-base * 1.75;
+$headings-color: rgb(54, 54, 54);
+
+h1,h2{
+    font-family: 'Merriweather', serif;
+    font-size:34px;
+
+    
+}
+
+h1:last-child,h2:last-child,h3:last-child
+h4:last-child,h5:last-child,h6:last-child{
+ 
+    margin:0;
+}
+p{
+    letter-spacing: 1px;
+}

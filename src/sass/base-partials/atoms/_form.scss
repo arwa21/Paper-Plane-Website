@@ -1,0 +1,202 @@
+
+
+//Labels
+.carousel-label,.carousel-title,label,strong{
+
+    text-align: left;
+}
+.carousel-label{
+    padding-top:0.625rem;
+    margin-bottom:0.5em;
+    font-weight: 300;
+    
+}
+.carousel-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-label span {
+  
+    width:95%;
+
+  }
+  .desktop-grid .carousel-label:before {
+    background: #fff;
+  }
+  .carousel-label:before
+   {
+    background: #000;
+    height: 1px;
+    flex: 1;
+    content: '';
+    margin-left: 0px;
+  }
+  .carousel-label:after {
+    background: none;
+  }
+.carousel-title{
+    line-height: 2.063rem;
+}
+
+.desktop-grid .carousel-title,.desktop-grid .carousel-label{
+    color:white;
+}
+.desktop-grid .carousel-title{
+    font-size:1.375rem;
+    @media screen and (max-width:1200px){
+        font-size:1.125rem;
+    }
+}
+.desktop-grid .position-absolute{
+    left: 5%;
+    text-align: left;
+}
+.desktop-grid .grid-title-1{
+    top: 70%;
+    width: 53%;
+}
+.desktop-grid .grid-title-2{
+    top: 65%;
+    width: 92%;
+}
+.desktop-grid .grid-title-3{
+    top: 61%;
+    width: 94%;
+}
+.desktop-grid .grid-title-4{
+    top: 69%;
+    width: 93%;
+}
+.desktop-grid .grid-title-5{
+    top: 75%;
+    width: 88%;
+
+}
+
+label{
+    color: #000000;
+    background-color: #ffff;
+    margin: 0px;
+    font-size: 11px;
+    padding: 0.125rem 0.4375rem;
+ 
+
+}
+.card-label{
+    position: absolute;
+    top: 81%;
+    left: 12px;
+    padding: 0 0.375rem;
+    bottom: 0;
+   
+}
+//Label end
+
+//Links
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 0.8125rem;
+    padding-left: 0.625rem;
+   
+   
+  &:hover{
+        color: #ffffff;  
+        
+    }
+    @media only screen and (min-width: 991px) {
+        padding-left: 2.125rem;
+        padding-bottom: 2.125rem;
+        padding-top: 2.125rem;
+         
+    }
+}
+
+.navbar-light .navbar-nav .active > .nav-link{
+    color: #ffffff;
+}
+.design-links{
+    text-align: left;
+    margin-top:1.25rem; 
+    margin-left: 0.625rem;
+     @media screen and (max-width: 991px) {
+        margin-left:0;
+     }
+}
+.col-links{
+   text-decoration: none;
+   border-bottom: 2px solid $primary;
+   color:#000000;
+   font-weight:60;
+   &:hover{
+       text-decoration: none;
+       color: #000000;
+       border-bottom: 2px solid transparent;
+       
+    
+   }
+
+
+}
+.col-links
+{
+text-decoration:none;
+display: inline-block;
+color:black;
+}
+/* add a empty string after the elment with class .slide-left-right */
+.col-links:after 
+{
+content: '';
+display: block;
+height: 2px;
+width: 0;
+border-bottom: 2px solid transparent;
+background: transparent;
+transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+-webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
+-moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
+}
+/* Change the width and background on hover, aka sliding out */
+.col-links:hover:after 
+{
+width: 100%;
+background: $primary-yellow;
+}
+
+.design-link{
+    padding-bottom: 24px;
+
+}
+.card-link{
+    text-align:left;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+footer  {
+    a{
+    text-decoration: none;
+    color:white;
+    &:hover{
+        color:$primary-yellow;
+        text-decoration: none;
+    }
+}
+}
+.nav-footer ul{
+    padding-left:1.563rem;
+}
+
+@media only screen and (min-width: 991px) {   
+.navbar-light .navbar-nav .nav-link:hover .underline {
+       padding-bottom: 0.125rem;
+       border-bottom: $primary-yellow 1.5px solid;
+   }
+  
+}
+
+
+//Links end

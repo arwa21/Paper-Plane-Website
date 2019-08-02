@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding:0px;
+}
+section{
+    margin:0px auto;
+    width:960px;
+    text-align: center;
+    padding:20px;
+    padding-bottom:30px;
+} 
+.blue-bg{
+  background-image: url("../../img/bg-blue.jpg");
+  
+  background-size:cover;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  
+}
+.sec-top{
+  margin-bottom:20px;
+}
+.cta{
+  background-color: $secondary;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.clients .row{
+  margin:0px;
+}
+.width-para{
+  width: 375px;
+  margin: 0px auto;
+  margin-bottom: 0.625rem;
+}
+.space-nav{
+  padding: 20px;
+}

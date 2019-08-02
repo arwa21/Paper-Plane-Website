@@ -1,0 +1,95 @@
+body{
+   font-size: 100%;
+}
+.sec-label{
+    // text-align: center;
+    font-size:0.8125rem;
+    margin-bottom:0.333rem;
+    font-weight: 100;
+}
+.banner-para{
+    text-align: center;
+    color:$secondary;
+    font-weight: 100;
+    margin: 0.167rem 0 0.417rem;
+ 
+}
+.banner-titile{
+    color:$secondary;
+    margin-top:1em;
+  
+    
+}
+.sub-subtitle{
+    letter-spacing: 0px;
+    display: none;
+    @media only screen and (min-width: 991px) {
+        display: block;
+       
+    }
+
+}
+.sec-head{
+    font-weight: 700;
+}
+.sub-heading{
+    padding:0.4375rem 0px;
+}
+.tech{
+    padding: 0.125rem 0;
+}
+.card-title{
+    text-align: left;
+}
+.about-pp{
+    h5{
+        margin:0.9375rem 0;
+        width: 450px;
+    }
+}
+strong{
+    color: black;
+    
+}
+.cta-title, .cta-subtitle{
+ letter-spacing: normal;
+ color:$secondary-grey;
+ margin-bottom: 0;
+}
+.alternate{
+    color:#000000;
+    font-weight: 100;
+    margin-top:1.25rem;
+}
+footer li{    
+    list-style-type: none;
+    padding-bottom: 0.3125rem;
+    letter-spacing: 0.0625rem;
+}
+footer ul{
+    font-size:0.8125rem;
+    padding-top:0.8125rem;
+    padding-left: 0px;
+  
+}
+.footer-title,.copyright{
+    padding:1.063rem 0.083rem 1.25rem;
+    font-size:0.9375rem;
+    font-weight:500;
+}
+.copyright {
+    font-weight:100;
+    font-size: 0.625rem;
+}
+.mobilecopy{
+    padding-left:3.375rem;
+    @media only screen and (min-width: 991px) {
+        display: none;
+    }
+}
+.desktopcopy{
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+

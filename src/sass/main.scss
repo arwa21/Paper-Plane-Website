@@ -1,0 +1,37 @@
+
+//Google Fonts 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+@import "base-partials/vendor/_normalize.scss";
+@import "base-partials/vendor/_animate.scss";
+//Variables
+@import 'base-partials/var/_colors.scss';
+@import 'base-partials/var/_typography.scss';
+
+//Atoms 
+@import 'base-partials/atoms/_buttons.scss';
+@import 'base-partials/atoms/_form.scss';
+@import 'base-partials/atoms/_type.scss';
+@import 'base-partials/atoms/_img.scss';
+
+//Base
+@import 'base-partials/base/_base.scss';
+
+
+//Molecules
+@import 'base-partials/molecules/_card.scss';
+@import 'base-partials/molecules/_nav.scss';
+@import 'base-partials/molecules/_dropdown.scss';
+
+
+//Organisms
+@import 'base-partials/organisms/_banner.scss';
+@import 'base-partials/organisms/_footer.scss';
+@import 'base-partials/organisms/_grid.scss';
+
+
+
+//Vendor
+
