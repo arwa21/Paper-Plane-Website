@@ -11,11 +11,15 @@ section{
 } 
 .blue-bg{
   background-image: url("../../img/bg-blue.jpg");
-  
   background-size:cover;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  height:auto;
+  @media only screen and (min-width: 991px){
+  
+    height:100vh;
+  }
   
 }
 .sec-top{

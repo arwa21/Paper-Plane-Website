@@ -44,12 +44,12 @@ body{
 .about-pp{
     h5{
         margin:0.9375rem 0;
-        width: 450px;
+        width: 90%;
     }
 }
 strong{
     color: black;
-    
+
 }
 .cta-title, .cta-subtitle{
  letter-spacing: normal;
@@ -82,7 +82,7 @@ footer ul{
     font-size: 0.625rem;
 }
 .mobilecopy{
-    padding-left:3.375rem;
+    padding-left: 1.1rem;
     @media only screen and (min-width: 991px) {
         display: none;
     }

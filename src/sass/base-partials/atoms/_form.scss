@@ -125,44 +125,65 @@ label{
 }
 .col-links{
    text-decoration: none;
-   border-bottom: 2px solid $primary;
    color:#000000;
    font-weight:60;
+   display: inline-block;
+   box-shadow:  0 2px 0 $primary;
+   position: relative;
+   transition: color 1000ms;
+  &:hover::before{
+      left: 194px;
+  }
    &:hover{
-       text-decoration: none;
-       color: #000000;
-       border-bottom: 2px solid transparent;
-       
-    
+    text-decoration: none;
+    color: #000000;
+   
+  
+
    }
+ 
 
+}
+.lines::before,
+.lines::after {
+  display: inline;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: $primary-yellow;
+  top: 24px;
+  left: 0;
+  transition: width 1000ms;
+}
 
+.col-links:hover .lines::before,
+.col-links:hover .lines::after {
+  width: 100%;
 }
-.col-links
-{
-text-decoration:none;
-display: inline-block;
-color:black;
-}
-/* add a empty string after the elment with class .slide-left-right */
-.col-links:after 
-{
-content: '';
-display: block;
-height: 2px;
-width: 0;
-border-bottom: 2px solid transparent;
-background: transparent;
-transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
--webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
--moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
-}
-/* Change the width and background on hover, aka sliding out */
-.col-links:hover:after 
-{
-width: 100%;
-background: $primary-yellow;
-}
+
+// /* add a empty string after the elment with class .slide-left-right */
+// .col-links:after 
+// {
+// content: '';
+// display: block;
+// height: 2px;
+// width: 0;
+
+// border-bottom: 2px solid $primary-yellow;
+// background: transparent;
+// transition: width .5s ease, border-bottom .5s ease; /* .5 seonds for changes to the width and background-color */
+// -webkit-transition: width .5s ease, border-bottom .5s ease; /* Chrome and Safari */
+// -moz-transition: width .5s ease, border-bottom .5s ease;
+
+// /* FireFox */
+// }
+// /* Change the width and background on hover, aka sliding out */
+// .col-links:hover:after 
+// {
+// width: 100%;
+// border-bottom: $primary-yellow;
+// }
 
 .design-link{
     padding-bottom: 24px;

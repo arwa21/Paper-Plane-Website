@@ -12,7 +12,7 @@ gulp.task('build-css', function() {
     return gulp.src('src/sass/main.scss')
       .pipe(sass())
       .pipe(gulp.dest('src/css'));
-  });
+  }); 
   
   gulp.task('minify-css', ['build-css'], function() {
     return gulp.src(['src/css/*.css', '!src/css/*.min.css'])

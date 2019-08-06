@@ -1,11 +1,15 @@
 
 .banner-section{
-    padding:55px 35px 150px;
     text-align: center;
+    padding: 19vh 7vh;
+    h1{
+        font-size:2em;
+    }
     @media only screen and (min-width: 991px){
         margin: 0px auto;
         width: 960px;
-        padding: 17px 21px 125px;
+        padding: 26vh 16vh;
+        
 
     }
 }

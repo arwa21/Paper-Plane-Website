@@ -2988,8 +2988,7 @@ template {
     animation-iteration-count: 1 !important; } }
 
 h1, h2 {
-  font-family: 'Merriweather', serif;
-  font-size: 34px; }
+  font-family: 'Merriweather', serif; }
 
 h1:last-child, h2:last-child, h3:last-child
 h4:last-child, h5:last-child, h6:last-child {
@@ -3088,7 +3087,7 @@ p {
     padding-right: 1.130rem; }
   .btn-outline-primary:hover .material-icons {
     transform: translateX(30%);
-    transition: 0.2s ease-in; }
+    transition: 0.2s  ease-in-out; }
 
 .btn:hover::after {
   transform: translate(10px, 0); }
@@ -3221,38 +3220,33 @@ label {
 
 .col-links {
   text-decoration: none;
-  border-bottom: 2px solid #1ba3d1;
   color: #000000;
-  font-weight: 60; }
+  font-weight: 60;
+  display: inline-block;
+  box-shadow: 0 2px 0 #1ba3d1;
+  position: relative;
+  transition: color 1000ms; }
+  .col-links:hover::before {
+    left: 194px; }
   .col-links:hover {
     text-decoration: none;
-    color: #000000;
-    border-bottom: 2px solid transparent; }
+    color: #000000; }
 
-.col-links {
-  text-decoration: none;
-  display: inline-block;
-  color: black; }
-
-/* add a empty string after the elment with class .slide-left-right */
-.col-links:after {
+.lines::before,
+.lines::after {
+  display: inline;
   content: '';
-  display: block;
-  height: 2px;
+  position: absolute;
   width: 0;
-  border-bottom: 2px solid transparent;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-  /* .5 seonds for changes to the width and background-color */
-  -webkit-transition: width .5s ease, background-color .5s ease;
-  /* Chrome and Safari */
-  -moz-transition: width .5s ease, background-color .5s ease;
-  /* FireFox */ }
+  height: 2px;
+  background: #CCC20B;
+  top: 24px;
+  left: 0;
+  transition: width 1000ms; }
 
-/* Change the width and background on hover, aka sliding out */
-.col-links:hover:after {
-  width: 100%;
-  background: #CCC20B; }
+.col-links:hover .lines::before,
+.col-links:hover .lines::after {
+  width: 100%; }
 
 .design-link {
   padding-bottom: 24px; }
@@ -3317,7 +3311,7 @@ body {
 
 .about-pp h5 {
   margin: 0.9375rem 0;
-  width: 450px; }
+  width: 90%; }
 
 strong {
   color: black; }
@@ -3352,7 +3346,7 @@ footer ul {
   font-size: 0.625rem; }
 
 .mobilecopy {
-  padding-left: 3.375rem; }
+  padding-left: 1.1rem; }
   @media only screen and (min-width: 991px) {
     .mobilecopy {
       display: none; } }
@@ -3377,8 +3371,7 @@ footer ul {
   margin-bottom: 2.5rem; }
 
 .client-logo-1 {
-  width: 140px;
-  margin-top: 3.75rem; }
+  width: 140px; }
 
 .client-logo-2 {
   width: 92px; }
@@ -3387,8 +3380,7 @@ footer ul {
   width: 130px; }
 
 .client-logo-4 {
-  width: 71px;
-  margin-top: 1.563rem; }
+  width: 71px; }
 
 .client-logo-5 {
   width: 153px; }
@@ -3410,6 +3402,11 @@ footer ul {
 .client-logo-10 {
   width: 140px;
   margin-top: 3.75rem; }
+
+.center-align {
+  justify-content: center;
+  align-items: center;
+  display: flex; }
 
 .col-hide {
   display: none; }
@@ -3464,13 +3461,17 @@ footer ul {
 
 .desktop-grid img {
   opacity: 0.7;
+  -webkit-filter: grayscale(30%);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out; }
 
 .desktop-grid img:hover {
   opacity: 1;
+  -webkit-filter: grayscale(0%);
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
   transform: scale(1.03);
-  z-index: -1; }
+  box-shadow: 0px 0px 10px #000000; }
 
 @media screen and (max-width: 991px) {
   .desktop-grid {
@@ -3499,7 +3500,11 @@ section {
   background-repeat: no-repeat;
   /* Do not repeat the image */
   background-size: cover;
-  /* Resize the background image to cover the entire container */ }
+  /* Resize the background image to cover the entire container */
+  height: auto; }
+  @media only screen and (min-width: 991px) {
+    .blue-bg {
+      height: 100vh; } }
 
 .sec-top {
   margin-bottom: 20px; }
@@ -3580,13 +3585,15 @@ section {
     margin-bottom: 0; } }
 
 .banner-section {
-  padding: 55px 35px 150px;
-  text-align: center; }
+  text-align: center;
+  padding: 19vh 7vh; }
+  .banner-section h1 {
+    font-size: 2em; }
   @media only screen and (min-width: 991px) {
     .banner-section {
       margin: 0px auto;
       width: 960px;
-      padding: 17px 21px 125px; } }
+      padding: 26vh 16vh; } }
 
 footer {
   background-color: #668391;

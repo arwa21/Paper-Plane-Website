@@ -7,4 +7,12 @@ $(document).ready(function(){
     });
 });     
 
-   AOS.init(); 
+   AOS.init();
+
+
+   $(".col-links").hover(function() {
+    $(this).stop().animate({"border-color": "#999999"}, "slow");
+   },
+  function() {
+    $(this).stop().animate({"border-color": "#BFBFBF"}, "slow");
+  });
