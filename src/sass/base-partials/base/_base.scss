@@ -1,13 +1,17 @@
-body{
+
+html{
+font-size: 86%;
+
+}body{
     margin:0;
     padding:0px;
+  
 }
 section{
     margin:0px auto;
     width:960px;
     text-align: center;
-    padding:20px;
-    padding-bottom:30px;
+   
 } 
 .blue-bg{
   background-image: url("../../img/bg-blue.jpg");
@@ -23,21 +27,52 @@ section{
   
 }
 .sec-top{
-  margin-bottom:20px;
+  padding-top: 74px;
+  padding-bottom: 37px;
 }
 .cta{
   background-color: $secondary;
-  padding-top:50px;
-  padding-bottom:50px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  background-image: url("../../04-Assets/00-Homepage/Images/07-motif-footer.png") ;
+  background-repeat: no-repeat;
+  background-position:center right;
+  background-position-y: 20px;
+   background-attachment:local;
+   margin-top:113px;
+   @media screen and (max-width:991px){
+     background-image:none; 
+   }
+   
+ 
 }
+
+
 .clients .row{
   margin:0px;
 }
-.width-para{
+.width-para-1{
   width: 375px;
   margin: 0px auto;
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.6875rem;
+  @media screen and (max-width:991px){
+    display: none;
+  }
+}
+.width-para-2{
+  width:436px;
+  margin-bottom: 2.25rem;
+  @media screen and (max-width:991px){
+    display: none;
+  }
+  
 }
 .space-nav{
-  padding: 20px;
+  padding: 3.125rem 10.06rem  2.375rem 2.375rem;
+  @media screen and (max-width:991px) {
+    padding:1.25rem;
+  }
+}
+.about-pp{
+  padding:10px;
 }

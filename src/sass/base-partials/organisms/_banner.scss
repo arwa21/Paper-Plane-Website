@@ -2,8 +2,8 @@
 .banner-section{
     text-align: center;
     padding: 19vh 7vh;
-    h1{
-        font-size:2em;
+    .banner-title{
+        font-size:2rem;
     }
     @media only screen and (min-width: 991px){
         margin: 0px auto;

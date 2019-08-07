@@ -3,14 +3,13 @@ body{
 }
 .sec-label{
     // text-align: center;
-    font-size:0.8125rem;
+    font-size:0.9125rem;
     margin-bottom:0.333rem;
     font-weight: 100;
 }
 .banner-para{
     text-align: center;
     color:$secondary;
-    font-weight: 100;
     margin: 0.167rem 0 0.417rem;
  
 }
@@ -29,42 +28,48 @@ body{
     }
 
 }
+.tech{
+    padding:1.1rem 0rem 1.375rem;
+
+}
 .sec-head{
     font-weight: 700;
 }
 .sub-heading{
-    padding:0.4375rem 0px;
+    padding:1.6875rem 0px 1.375rem;
 }
-.tech{
-    padding: 0.125rem 0;
-}
+
 .card-title{
     text-align: left;
 }
 .about-pp{
-    h5{
+    .card-title{
         margin:0.9375rem 0;
-        width: 90%;
+        width: 70%;
     }
 }
 strong{
     color: black;
+    font-weight: 300;
 
 }
 .cta-title, .cta-subtitle{
  letter-spacing: normal;
- color:$secondary-grey;
+ color:#363636;
  margin-bottom: 0;
 }
 .alternate{
     color:#000000;
     font-weight: 100;
-    margin-top:1.25rem;
+    margin-top:2.5rem;
 }
 footer li{    
     list-style-type: none;
     padding-bottom: 0.3125rem;
     letter-spacing: 0.0625rem;
+    a{
+        font-weight: 300;
+    }
 }
 footer ul{
     font-size:0.8125rem;
@@ -73,13 +78,18 @@ footer ul{
   
 }
 .footer-title,.copyright{
-    padding:1.063rem 0.083rem 1.25rem;
-    font-size:0.9375rem;
-    font-weight:500;
+    padding:20px 0px; 
+    font-size: 0.9375rem;
+    font-weight: 500;
+    width:65%;
+    margin-bottom: 0px;
 }
+
 .copyright {
     font-weight:100;
     font-size: 0.625rem;
+    padding-right: 0;
+    width:auto;
 }
 .mobilecopy{
     padding-left: 1.1rem;

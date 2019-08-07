@@ -16,3 +16,15 @@ $(document).ready(function(){
   function() {
     $(this).stop().animate({"border-color": "#BFBFBF"}, "slow");
   });
+
+
+  //BodyMovin
+
+  var animation = bodymovin.loadAnimation({
+      container: document.getElementById('blog1'),
+      renderer:'svg',
+      loop:true,
+      autoplay:true,
+      path:'04-Assets/00-Homepage/blog-animations/01/data.json'
+
+  });
